@@ -1,7 +1,0 @@
-   Build using "/tools/software/xilinx/Vitis_HLS/2022.1/tps/lnx64/gcc-8.3.0/bin/g++"
-   Compiling apatb_apply_watermark.cpp
-   Compiling krnl_apply_watermark_test.cpp_pre.cpp.tb.cpp
-   Compiling bitmap.cpp_pre.cpp.tb.cpp
-   Compiling apply_watermark.cpp_pre.cpp.tb.cpp
-   Compiling apatb_apply_watermark_ir.ll
-   Generating cosim.tv.exe

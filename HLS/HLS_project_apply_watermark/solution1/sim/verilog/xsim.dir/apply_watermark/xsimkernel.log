@@ -1,7 +1,0 @@
-Running: xsim.dir/apply_watermark/xsimk -simmode gui -wdb apply_watermark.wdb -simrunnum 0 -socket 34882
-Design successfully loaded
-Design Loading Memory Usage: 63772 KB (Peak: 63772 KB)
-Design Loading CPU Usage: 40 ms
-Simulation completed
-Simulation Memory Usage: 157748 KB (Peak: 203044 KB)
-Simulation CPU Usage: 5620 ms
