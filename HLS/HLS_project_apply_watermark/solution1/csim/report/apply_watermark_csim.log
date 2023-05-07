@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../Vitis_Accel_Examples/cpp_kernels/critical_path/src/krnl_apply_watermark_test.cpp in debug mode
+   Compiling ../../../../Vitis_Accel_Examples/common/includes/bitmap/bitmap.cpp in debug mode
+   Compiling ../../../../Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp in debug mode
+   Generating csim.exe
+TEST PASSED
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

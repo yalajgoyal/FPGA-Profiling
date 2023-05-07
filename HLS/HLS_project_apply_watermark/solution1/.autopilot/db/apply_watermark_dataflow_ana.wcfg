@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="apply_watermark.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_apply_watermark_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark//AESL_inst_apply_watermark_activity">
+         <obj_property name="label">AESL_inst_apply_watermark_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_apply_watermark_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_apply_watermark_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark//AESL_inst_apply_watermark_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark//AESL_inst_apply_watermark_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark//AESL_inst_apply_watermark_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/entry_proc_U0_activity">
+            <obj_property name="label">entry_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/entry_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/entry_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/load_input_U0_activity">
+            <obj_property name="label">load_input_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">load_input_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">load_input_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/load_input_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/load_input_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/load_input_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/grp_load_input_Pipeline_image_traverse_fu_59_activity">
+               <obj_property name="label">grp_load_input_Pipeline_image_traverse_fu_59_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_load_input_Pipeline_image_traverse_fu_59_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_load_input_Pipeline_image_traverse_fu_59_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/grp_load_input_Pipeline_image_traverse_fu_59_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/grp_load_input_Pipeline_image_traverse_fu_59_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/grp_load_input_Pipeline_image_traverse_fu_59_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/compute_watermark_U0_activity">
+            <obj_property name="label">compute_watermark_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">compute_watermark_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">compute_watermark_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/compute_watermark_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/compute_watermark_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/compute_watermark_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/store_result_U0_activity">
+            <obj_property name="label">store_result_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">store_result_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">store_result_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/store_result_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/store_result_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/store_result_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/grp_store_result_Pipeline_mem_wr_fu_66_activity">
+               <obj_property name="label">grp_store_result_Pipeline_mem_wr_fu_66_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_store_result_Pipeline_mem_wr_fu_66_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_store_result_Pipeline_mem_wr_fu_66_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/grp_store_result_Pipeline_mem_wr_fu_66_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/grp_store_result_Pipeline_mem_wr_fu_66_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/grp_store_result_Pipeline_mem_wr_fu_66_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark//AESL_inst_apply_watermark_activity">
+      <obj_property name="ElementShortName">AESL_inst_apply_watermark_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_apply_watermark_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_apply_watermark_group">
+      <obj_property name="label">AESL_inst_apply_watermark</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/entry_proc_U0_activity">
+         <obj_property name="ElementShortName">entry_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">entry_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/load_input_U0_activity">
+         <obj_property name="ElementShortName">load_input_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">load_input_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/compute_watermark_U0_activity">
+         <obj_property name="ElementShortName">compute_watermark_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">compute_watermark_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/store_result_U0_activity">
+         <obj_property name="ElementShortName">store_result_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">store_result_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_apply_watermark_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="entry_proc_U0_group">
+         <obj_property name="label">entry_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="entry_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="entry_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="output_r_c_group">
+               <obj_property name="label">output_r_c(output_r_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/output_r_c_blk_n">
+                  <obj_property name="ElementShortName">output_r_c_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">output_r_c_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/output_r_c_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/output_r_c_full_n">
+                  <obj_property name="ElementShortName">output_r_c_full_n</obj_property>
+                  <obj_property name="ObjectShortName">output_r_c_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/entry_proc_U0/output_r_c_write">
+                  <obj_property name="ElementShortName">output_r_c_write</obj_property>
+                  <obj_property name="ObjectShortName">output_r_c_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="load_input_U0_group">
+         <obj_property name="label">load_input_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/grp_load_input_Pipeline_image_traverse_fu_59_activity">
+            <obj_property name="ElementShortName">grp_load_input_Pipeline_image_traverse_fu_59_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_load_input_Pipeline_image_traverse_fu_59_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_input_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="load_input_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="load_input_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="inStream_group">
+               <obj_property name="label">inStream(inStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/inStream_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/inStream_full_n">
+                  <obj_property name="ElementShortName">inStream_full_n</obj_property>
+                  <obj_property name="ObjectShortName">inStream_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/inStream_write">
+                  <obj_property name="ElementShortName">inStream_write</obj_property>
+                  <obj_property name="ObjectShortName">inStream_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="xStream_group">
+               <obj_property name="label">xStream(xStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/xStream_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/xStream_full_n">
+                  <obj_property name="ElementShortName">xStream_full_n</obj_property>
+                  <obj_property name="ObjectShortName">xStream_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/xStream_write">
+                  <obj_property name="ElementShortName">xStream_write</obj_property>
+                  <obj_property name="ObjectShortName">xStream_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="yStream_group">
+               <obj_property name="label">yStream(yStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/yStream_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/yStream_full_n">
+                  <obj_property name="ElementShortName">yStream_full_n</obj_property>
+                  <obj_property name="ObjectShortName">yStream_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/yStream_write">
+                  <obj_property name="ElementShortName">yStream_write</obj_property>
+                  <obj_property name="ObjectShortName">yStream_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_load_input_Pipeline_image_traverse_fu_59_group">
+            <obj_property name="label">grp_load_input_Pipeline_image_traverse_fu_59</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_load_input_Pipeline_image_traverse_fu_59_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/load_input_U0/grp_load_input_Pipeline_image_traverse_fu_59/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="compute_watermark_U0_group">
+         <obj_property name="label">compute_watermark_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="compute_watermark_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="inStream_group">
+               <obj_property name="label">inStream(inStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/inStream_blk_n">
+                  <obj_property name="ElementShortName">inStream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">inStream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/inStream_dout">
+                  <obj_property name="ElementShortName">inStream_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">inStream_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/inStream_empty_n">
+                  <obj_property name="ElementShortName">inStream_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">inStream_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/inStream_read">
+                  <obj_property name="ElementShortName">inStream_read</obj_property>
+                  <obj_property name="ObjectShortName">inStream_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="xStream_group">
+               <obj_property name="label">xStream(xStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/xStream_blk_n">
+                  <obj_property name="ElementShortName">xStream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">xStream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/xStream_dout">
+                  <obj_property name="ElementShortName">xStream_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">xStream_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/xStream_empty_n">
+                  <obj_property name="ElementShortName">xStream_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">xStream_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/xStream_read">
+                  <obj_property name="ElementShortName">xStream_read</obj_property>
+                  <obj_property name="ObjectShortName">xStream_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="yStream_group">
+               <obj_property name="label">yStream(yStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/yStream_blk_n">
+                  <obj_property name="ElementShortName">yStream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">yStream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/yStream_dout">
+                  <obj_property name="ElementShortName">yStream_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">yStream_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/yStream_empty_n">
+                  <obj_property name="ElementShortName">yStream_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">yStream_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/yStream_read">
+                  <obj_property name="ElementShortName">yStream_read</obj_property>
+                  <obj_property name="ObjectShortName">yStream_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="watermark_group">
+               <obj_property name="label">watermark(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/watermark_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/watermark_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/watermark_ce0">
+                  <obj_property name="ElementShortName">watermark_ce0</obj_property>
+                  <obj_property name="ObjectShortName">watermark_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="compute_watermark_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="compute_watermark_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="outStream_group">
+               <obj_property name="label">outStream(outStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/outStream_blk_n">
+                  <obj_property name="ElementShortName">outStream_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">outStream_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/outStream_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/outStream_full_n">
+                  <obj_property name="ElementShortName">outStream_full_n</obj_property>
+                  <obj_property name="ObjectShortName">outStream_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/compute_watermark_U0/outStream_write">
+                  <obj_property name="ElementShortName">outStream_write</obj_property>
+                  <obj_property name="ObjectShortName">outStream_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="store_result_U0_group">
+         <obj_property name="label">store_result_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/grp_store_result_Pipeline_mem_wr_fu_66_activity">
+            <obj_property name="ElementShortName">grp_store_result_Pipeline_mem_wr_fu_66_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_store_result_Pipeline_mem_wr_fu_66_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="store_result_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="out_r_group">
+               <obj_property name="label">out_r(output_r_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/out_r_blk_n">
+                  <obj_property name="ElementShortName">out_r_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">out_r_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/out_r_dout">
+                  <obj_property name="ElementShortName">out_r_dout[63:0]</obj_property>
+                  <obj_property name="ObjectShortName">out_r_dout[63:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/out_r_empty_n">
+                  <obj_property name="ElementShortName">out_r_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">out_r_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/out_r_read">
+                  <obj_property name="ElementShortName">out_r_read</obj_property>
+                  <obj_property name="ObjectShortName">out_r_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="outStream_group">
+               <obj_property name="label">outStream(outStream_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/outStream_dout">
+                  <obj_property name="ElementShortName">outStream_dout[511:0]</obj_property>
+                  <obj_property name="ObjectShortName">outStream_dout[511:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/outStream_empty_n">
+                  <obj_property name="ElementShortName">outStream_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">outStream_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/outStream_read">
+                  <obj_property name="ElementShortName">outStream_read</obj_property>
+                  <obj_property name="ObjectShortName">outStream_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="store_result_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="store_result_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_store_result_Pipeline_mem_wr_fu_66_group">
+            <obj_property name="label">grp_store_result_Pipeline_mem_wr_fu_66</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_store_result_Pipeline_mem_wr_fu_66_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_apply_watermark_top/AESL_inst_apply_watermark/store_result_U0/grp_store_result_Pipeline_mem_wr_fu_66/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vitis HLS Report for 'saturatedAdd'
+================================================================
+* Date:           Wed May  3 22:20:11 2023
+
+* Version:        2022.1.2 (Build 3605665 on Fri Aug  5 22:52:02 MDT 2022)
+* Project:        HLS_project_apply_watermark
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.163 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 3.16>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%y_read = read i17 @_ssdm_op_Read.ap_auto.i17, i17 %y"   --->   Operation 2 'read' 'y_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%x_read = read i24 @_ssdm_op_Read.ap_auto.i24, i24 %x"   --->   Operation 3 'read' 'x_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%redY = trunc i17 %y_read" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:176]   --->   Operation 4 'trunc' 'redY' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%redX = trunc i24 %x_read" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:176]   --->   Operation 5 'trunc' 'redX' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%zext_ln180 = zext i8 %redX" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:180]   --->   Operation 6 'zext' 'zext_ln180' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%zext_ln181 = zext i8 %redY" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:181]   --->   Operation 7 'zext' 'zext_ln181' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%greenX = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %x_read, i32 8, i32 15" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:185]   --->   Operation 8 'partselect' 'greenX' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln185 = zext i8 %greenX" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:185]   --->   Operation 9 'zext' 'zext_ln185' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%greenY = partselect i8 @_ssdm_op_PartSelect.i8.i17.i32.i32, i17 %y_read, i32 8, i32 15" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:186]   --->   Operation 10 'partselect' 'greenY' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%zext_ln186 = zext i8 %greenY" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:186]   --->   Operation 11 'zext' 'zext_ln186' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%blueX = partselect i8 @_ssdm_op_PartSelect.i8.i24.i32.i32, i24 %x_read, i32 16, i32 23" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:190]   --->   Operation 12 'partselect' 'blueX' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node blueOutput)   --->   "%zext_ln190 = zext i8 %blueX" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:190]   --->   Operation 13 'zext' 'zext_ln190' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i17.i32, i17 %y_read, i32 16" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:191]   --->   Operation 14 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns) (grouped into LUT with out node blueOutput)   --->   "%select_ln195 = select i1 %tmp, i9 15, i9 0" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195]   --->   Operation 15 'select' 'select_ln195' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.91ns)   --->   "%redOutput = add i9 %zext_ln181, i9 %zext_ln180" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195]   --->   Operation 16 'add' 'redOutput' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (1.91ns)   --->   "%add_ln195_1 = add i8 %redY, i8 %redX" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195]   --->   Operation 17 'add' 'add_ln195_1' <Predicate = (!tmp_1)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%tmp_1 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %redOutput, i32 8" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195]   --->   Operation 18 'bitselect' 'tmp_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.24ns)   --->   "%redOutput_2 = select i1 %tmp_1, i8 255, i8 %add_ln195_1" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195]   --->   Operation 19 'select' 'redOutput_2' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (1.91ns)   --->   "%greenOutput = add i9 %zext_ln186, i9 %zext_ln185" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:202]   --->   Operation 20 'add' 'greenOutput' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (1.91ns)   --->   "%add_ln202_1 = add i8 %greenY, i8 %greenX" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:202]   --->   Operation 21 'add' 'add_ln202_1' <Predicate = (!tmp_2)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_2 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %greenOutput, i32 8" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:202]   --->   Operation 22 'bitselect' 'tmp_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.24ns)   --->   "%greenOutput_1 = select i1 %tmp_2, i8 255, i8 %add_ln202_1" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:202]   --->   Operation 23 'select' 'greenOutput_1' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (0.00ns) (grouped into LUT with out node add_ln209_1)   --->   "%select_ln209 = select i1 %tmp, i8 15, i8 0" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:209]   --->   Operation 24 'select' 'select_ln209' <Predicate = (!tmp_3)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.21> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (1.91ns) (out node of the LUT)   --->   "%blueOutput = add i9 %select_ln195, i9 %zext_ln190" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:209]   --->   Operation 25 'add' 'blueOutput' <Predicate = true> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 26 [1/1] (1.91ns) (out node of the LUT)   --->   "%add_ln209_1 = add i8 %select_ln209, i8 %blueX" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:209]   --->   Operation 26 'add' 'add_ln209_1' <Predicate = (!tmp_3)> <Delay = 1.91> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.91> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%tmp_3 = bitselect i1 @_ssdm_op_BitSelect.i1.i9.i32, i9 %blueOutput, i32 8" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:209]   --->   Operation 27 'bitselect' 'tmp_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (1.24ns)   --->   "%blueOutput_1 = select i1 %tmp_3, i8 255, i8 %add_ln209_1" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:209]   --->   Operation 28 'select' 'blueOutput_1' <Predicate = true> <Delay = 1.24> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 1.24> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%combinedOutput = bitconcatenate i24 @_ssdm_op_BitConcatenate.i24.i8.i8.i8, i8 %blueOutput_1, i8 %greenOutput_1, i8 %redOutput_2" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:219]   --->   Operation 29 'bitconcatenate' 'combinedOutput' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 30 [1/1] (0.00ns)   --->   "%ret_ln220 = ret i24 %combinedOutput" [Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:220]   --->   Operation 30 'ret' 'ret_ln220' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 2.7ns.
+
+ <State 1>: 3.16ns
+The critical path consists of the following:
+	wire read operation ('y') on port 'y' [3]  (0 ns)
+	'add' operation ('add_ln195_1', Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195) [18]  (1.92 ns)
+	'select' operation ('redOutput', Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp:195) [20]  (1.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

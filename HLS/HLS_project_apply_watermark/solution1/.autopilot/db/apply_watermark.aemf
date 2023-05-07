@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1683166816395">
+  <ports id="1" name="gmem0" type="PortType" coreId="4294967292" bitwidth="512" iftype="IfTypeFifo">
+    <dataOutputObjs>call</dataOutputObjs>
+  </ports>
+  <ports id="2" name="gmem1" type="PortType" coreId="4294967292" bitwidth="512" direction="DirOut" iftype="IfTypeFifo">
+    <dataInputObjs>call</dataInputObjs>
+  </ports>
+  <ports id="3" name="input_r" type="PortType" coreId="2400782752" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="4" name="output_r" type="PortType" coreId="0" bitwidth="64">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <edges id="42" source_obj="//@ports.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="44" source_obj="//@ports.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="49" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="50" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="53" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="54" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="59" source_obj="//@regions.0/@basic_blocks.0/@node_objs.6" sink_obj="//@ports.1"/>
+  <edges id="60" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="61" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="62" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="63" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="64" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="65" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="66" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="67" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="68" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="69" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="386" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="387" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.5"/>
+  <edges id="388" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <edges id="389" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.6"/>
+  <regions anchor_node="-1" region_type="16" typeName="Dataflow" iiViolation="" id="139" RegionName="apply_watermark">
+    <basic_blocks id="39" name="apply_watermark" type="BlockType">
+      <node_objs xsi:type="cdfg:CdfgNode" id="10" name="output_r_read" lineNumber="168" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="apply_watermark" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="1" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="168" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <dataInputObjs>output_r</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="11" name="input_r_read" lineNumber="168" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreName="s_axilite" implIndex="s_axilite" control="no" opType="adapter" coreId="114" contextFuncName="apply_watermark" bitwidth="64" opcode="read" m_display="0" m_delay="1.0" m_topoIndex="2" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="168" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <dataInputObjs>input_r</dataInputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="12" name="output_r_c" lineNumber="168" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="output_r_c_U" coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="apply_watermark" bitwidth="64" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="168" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <dataOutputObjs>call</dataOutputObjs>
+        <dataOutputObjs>call</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="_ln168" lineNumber="168" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="entry_proc_U0" coreId="0" contextFuncName="apply_watermark" opcode="call" m_display="0" m_delay="3.63" m_topoIndex="4" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="168" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+        <constName>entry_proc</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="_ln170" lineNumber="170" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="load_input_U0" coreId="0" contextFuncName="apply_watermark" opcode="call" nodeLabel="1.0" nodeLatency="1" m_display="0" m_delay="7.3" m_topoIndex="5" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="170" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <dataInputObjs>gmem0</dataInputObjs>
+        <dataInputObjs>read</dataInputObjs>
+        <constName>load_input</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="_ln171" lineNumber="171" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="compute_watermark_U0" coreId="1868701696" contextFuncName="apply_watermark" opcode="call" nodeLabel="3.0" nodeLatency="1" m_display="0" m_topoIndex="6" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="171" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <constName>compute_watermark</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="_ln172" lineNumber="172" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="store_result_U0" coreId="2403009616" contextFuncName="apply_watermark" opcode="call" nodeLabel="5.0" nodeLatency="1" m_display="0" m_topoIndex="7" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="172" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>gmem1</dataOutputObjs>
+        <constName>store_result</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="_ln173" lineNumber="173" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2403010336" contextFuncName="apply_watermark" opcode="ret" nodeLabel="6.0" m_display="0" m_topoIndex="8" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="173" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="apply_watermark"/>
+      </node_objs>
+      <fileValidLineNumbers fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp">
+        <validLinenumbers>168</validLinenumbers>
+        <validLinenumbers>170</validLinenumbers>
+        <validLinenumbers>171</validLinenumbers>
+        <validLinenumbers>172</validLinenumbers>
+        <validLinenumbers>173</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <ScheduleInfo time="3"/>
+  <ScheduleInfo time="4"/>
+  <ScheduleInfo time="5"/>
+  <ScheduleInfo time="6"/>
+  <regnodes realName="output_r_c_reg_160">
+    <nodeIds>12</nodeIds>
+  </regnodes>
+  <regnodes realName="input_r_read_reg_155">
+    <nodeIds>11</nodeIds>
+  </regnodes>
+  <expressionNodes realName="output_r_c_fu_96">
+    <nodeIds>12</nodeIds>
+  </expressionNodes>
+  <moduleNodes realName="grp_store_result_fu_146">
+    <nodeIds>37</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_load_input_fu_119">
+    <nodeIds>35</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="call_ln168_entry_proc_fu_112">
+    <nodeIds>34</nodeIds>
+  </moduleNodes>
+  <moduleNodes realName="grp_compute_watermark_fu_132">
+    <nodeIds>36</nodeIds>
+  </moduleNodes>
+  <ioNodes realName="output_r_read_read_fu_100">
+    <nodeIds>10</nodeIds>
+  </ioNodes>
+  <ioNodes realName="input_r_read_read_fu_106">
+    <nodeIds>11</nodeIds>
+  </ioNodes>
+  <memoryPorts dataString="watermark" portID="100">
+    <nodeIds>36</nodeIds>
+  </memoryPorts>
+  <ioPorts name="gmem0">
+    <contents name="call">
+      <nodeIds>35</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="gmem1">
+    <contents name="call">
+      <nodeIds>37</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="input_r">
+    <contents name="read">
+      <nodeIds>11</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="output_r">
+    <contents name="read">
+      <nodeIds>10</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="35" stage="2" latency="2"/>
+    </states>
+    <states id="3">
+      <operations id="35" stage="1" latency="2"/>
+    </states>
+    <states id="4">
+      <operations id="36" stage="2" latency="2"/>
+    </states>
+    <states id="5">
+      <operations id="36" stage="1" latency="2"/>
+    </states>
+    <states id="6">
+      <operations id="37" stage="2" latency="2"/>
+    </states>
+    <states id="7">
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="19" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="26" stage="1" latency="1"/>
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="2"/>
+      <operations id="38" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="3" outState="4">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="4" outState="5">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="5" outState="6">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="6" outState="7">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="apply_watermark" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="31731" mMaxLatency="31731" mIsDfPipe="true">
+      <basicBlocks>39</basicBlocks>
+      <mDfPipe allPipePinInst="//@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.0/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.1/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@processe_list.3/@pins.0/@inst //@CFGRegionsRoot/@cfgRegions.0/@mDfPipe/@channel_list.1/@sink.0/@inst">
+        <processe_list name="entry_proc_U0" ssdmobj_id="34">
+          <pins>
+            <port name="output_r" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_50" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="34" object_id="_54"/>
+          </pins>
+        </processe_list>
+        <processe_list name="load_input_U0" ssdmobj_id="35">
+          <pins>
+            <port name="gmem0" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_47" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="load_input_U0" ssdmobj_id="35" object_id="_58"/>
+          </pins>
+          <pins>
+            <port name="input" type="SIOType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_49" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="load_input_U0" ssdmobj_id="35" object_id="_58"/>
+          </pins>
+        </processe_list>
+        <processe_list name="compute_watermark_U0" ssdmobj_id="36"/>
+        <processe_list name="store_result_U0" ssdmobj_id="37">
+          <pins>
+            <port name="gmem1" dir="DirOut" type="BUSType" need_hs="true" top_port_object_id="" top_port_object_id_reference="_48" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="store_result_U0" ssdmobj_id="37" object_id="_65"/>
+          </pins>
+        </processe_list>
+        <channel_list depth="4" bitwidth="64" suggested_type="2" suggested_depth="4" name="output_r_c" ssdmobj_id="12">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="entry_proc_U0" ssdmobj_id="34" object_id="_54"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="store_result_U0" ssdmobj_id="37" object_id="_65"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="512" suggested_type="0" suggested_depth="2" name="inStream" ssdmobj_id="5">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="load_input_U0" ssdmobj_id="35" object_id="_58"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="compute_watermark_U0" ssdmobj_id="36" object_id="_76"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="0" suggested_depth="2" name="xStream" ssdmobj_id="6">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="load_input_U0" ssdmobj_id="35" object_id="_58"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="compute_watermark_U0" ssdmobj_id="36" object_id="_76"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="32" suggested_type="0" suggested_depth="2" name="yStream" ssdmobj_id="7">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="load_input_U0" ssdmobj_id="35" object_id="_58"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="compute_watermark_U0" ssdmobj_id="36" object_id="_76"/>
+          </sink>
+        </channel_list>
+        <channel_list depth="2" bitwidth="512" suggested_type="0" suggested_depth="2" name="outStream" ssdmobj_id="9">
+          <source>
+            <port name="in" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="compute_watermark_U0" ssdmobj_id="36" object_id="_76"/>
+          </source>
+          <sink>
+            <port name="out" dir="DirOut" type="SIOType" top_port_object_id="" top_port_object_id_reference="" chan_object_id="" chan_object_id_reference=""/>
+            <inst name="store_result_U0" ssdmobj_id="37" object_id="_65"/>
+          </sink>
+        </channel_list>
+      </mDfPipe>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

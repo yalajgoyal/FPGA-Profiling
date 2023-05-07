@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdfg:DBCdfg xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:cdfg="http://www.autoesl.com/DBCdfg" timeStamp="1683166813825">
+  <ports id="1" name="gmem0" type="PortType" coreId="2398996240" bitwidth="512" iftype="IfTypeFifo">
+    <dataOutputObjs>getelementptr</dataOutputObjs>
+  </ports>
+  <ports id="2" name="sext_ln78" type="PortType" coreId="2" bitwidth="58">
+    <dataOutputObjs>read</dataOutputObjs>
+  </ports>
+  <ports id="3" name="inStream" type="PortType" coreName="FIFO_SRL" coreId="0" bitwidth="512" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="4" name="xStream" type="PortType" coreName="FIFO_SRL" coreId="2398996896" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <ports id="5" name="yStream" type="PortType" coreName="FIFO_SRL" coreId="2399019896" bitwidth="32" direction="DirOut" iftype="IfTypeRom">
+    <dataInputObjs>write</dataInputObjs>
+  </ports>
+  <edges id="54" source_obj="//@ports.1" sink_obj="//@blocks.0/@node_objs.3"/>
+  <edges id="55" source_obj="//@blocks.0/@node_objs.3" sink_obj="//@blocks.0/@node_objs.4"/>
+  <edges id="58" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@blocks.0/@node_objs.5"/>
+  <edges id="61" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@blocks.0/@node_objs.6"/>
+  <edges id="63" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@blocks.0/@node_objs.7"/>
+  <edges id="64" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.0/@node_objs.8"/>
+  <edges id="65" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="66" source_obj="//@ports.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="67" source_obj="//@blocks.0/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.1"/>
+  <edges id="68" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.2"/>
+  <edges id="71" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.3"/>
+  <edges id="74" source_obj="//@regions.0/@basic_blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="75" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="76" edge_type="CtrlEdge" source_obj="//@blocks.1" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.4"/>
+  <edges id="77" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="78" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="81" source_obj="//@regions.0/@basic_blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.2"/>
+  <edges id="84" source_obj="//@regions.0/@basic_blocks.1/@node_objs.3" sink_obj="//@ports.2"/>
+  <edges id="85" source_obj="//@regions.0/@basic_blocks.1/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.3"/>
+  <edges id="86" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.4"/>
+  <edges id="89" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.5"/>
+  <edges id="92" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.6"/>
+  <edges id="94" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="95" source_obj="//@regions.0/@basic_blocks.1/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="96" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.7"/>
+  <edges id="97" source_obj="//@regions.0/@basic_blocks.1/@node_objs.4" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="98" source_obj="//@regions.0/@basic_blocks.1/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="99" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.8"/>
+  <edges id="102" source_obj="//@regions.0/@basic_blocks.1/@node_objs.9" sink_obj="//@ports.3"/>
+  <edges id="103" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.9"/>
+  <edges id="105" source_obj="//@regions.0/@basic_blocks.1/@node_objs.10" sink_obj="//@ports.4"/>
+  <edges id="106" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.10"/>
+  <edges id="107" source_obj="//@regions.0/@basic_blocks.1/@node_objs.8" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.11"/>
+  <edges id="110" source_obj="//@regions.0/@basic_blocks.0/@node_objs.3" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="111" source_obj="//@blocks.0/@node_objs.2" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="112" source_obj="//@regions.0/@basic_blocks.1/@node_objs.11" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="113" source_obj="//@blocks.0/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="114" source_obj="//@regions.0/@basic_blocks.1/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="115" source_obj="//@blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="116" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.15"/>
+  <edges id="220" edge_type="CtrlEdge" source_obj="//@blocks.0" sink_obj="//@regions.0/@basic_blocks.0"/>
+  <edges id="221" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@blocks.1"/>
+  <edges id="222" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.0" sink_obj="//@regions.0/@basic_blocks.1"/>
+  <edges id="223" edge_type="CtrlEdge" source_obj="//@regions.0/@basic_blocks.1" sink_obj="//@regions.0/@basic_blocks.0" is_back_edge="1"/>
+  <edges id="224" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.1" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="225" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.1/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="226" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.0/@node_objs.0"/>
+  <edges id="227" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.5" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <edges id="228" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.1"/>
+  <edges id="229" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.6" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.13"/>
+  <edges id="230" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.0"/>
+  <edges id="231" edge_type="VirtEdge" source_obj="//@blocks.0/@node_objs.7" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.14"/>
+  <edges id="232" edge_type="VirtEdge" source_obj="//@regions.0/@basic_blocks.0/@node_objs.0" sink_obj="//@regions.0/@basic_blocks.1/@node_objs.12"/>
+  <blocks id="19" name="newFuncRoot" type="BlockType">
+    <controlOutputObjs>for.body.i</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="6" name="y" originalName="y" coreId="2398996896" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="1" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="7" name="x" originalName="x" coreId="4294967295" bitwidth="32" opcode="alloca" m_display="0" m_topoIndex="2" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="8" name="idx" originalName="idx" coreId="2398985904" bitwidth="15" opcode="alloca" m_display="0" m_topoIndex="3" m_clusterGroupNumber="-1">
+      <dataOutputObjs>store</dataOutputObjs>
+      <dataOutputObjs>load</dataOutputObjs>
+      <dataOutputObjs>store</dataOutputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="9" name="sext_ln78_read" coreId="0" bitwidth="58" opcode="read" m_display="0" m_topoIndex="4" m_clusterGroupNumber="-1">
+      <dataInputObjs>sext_ln78</dataInputObjs>
+      <dataOutputObjs>sext</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="10" name="sext_ln78_cast" coreId="2398997200" bitwidth="64" opcode="sext" m_display="0" m_topoIndex="5" m_clusterGroupNumber="-1">
+      <dataInputObjs>read</dataInputObjs>
+      <dataOutputObjs>getelementptr</dataOutputObjs>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="15" name="idx_write_ln0" coreId="2398989200" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="6" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="16" name="x_write_ln0" coreId="2398989776" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="7" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="17" name="y_write_ln0" coreId="2816" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="8" m_clusterGroupNumber="-1">
+      <dataInputObjs>alloca</dataInputObjs>
+      <constName>empty</constName>
+    </node_objs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="18" name="br_ln0" coreId="2398991072" opcode="br" m_display="0" m_topoIndex="9" m_clusterGroupNumber="-1">
+      <controlInputObjs>for.body.i</controlInputObjs>
+    </node_objs>
+  </blocks>
+  <blocks id="47" name="load_input.exit.exitStub" type="BlockType">
+    <controlInputObjs>for.body.i</controlInputObjs>
+    <controlOutputObjs>br</controlOutputObjs>
+    <node_objs xsi:type="cdfg:CdfgNode" id="46" name="_ln0" coreId="2399022944" opcode="ret" nodeLabel="1.0" m_display="0" m_topoIndex="21" m_clusterGroupNumber="-1"/>
+  </blocks>
+  <regions anchor_node="-1" region_type="8" interval="1" typeName="Pipeline" iiViolation="" id="163" pipe_depth="3" RegionName="image_traverse">
+    <basic_blocks id="26" name="for.body.i" type="BlockType">
+      <controlInputObjs>newFuncRoot</controlInputObjs>
+      <controlInputObjs>for.body.split.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>load_input.exit.exitStub</controlOutputObjs>
+      <controlOutputObjs>for.body.split.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="20" name="idx_1" lineNumber="78" originalName="idx" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399059712" contextFuncName="load_input" bitwidth="15" opcode="load" m_display="0" m_topoIndex="10" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="21" name="gmem0_addr" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399061088" contextFuncName="load_input" bitwidth="512" opcode="getelementptr" nodeLabel="1.0" m_display="0" m_topoIndex="15" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>gmem0</dataInputObjs>
+        <dataInputObjs>sext</dataInputObjs>
+        <dataOutputObjs>read</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="23" name="icmp_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="icmp_ln78_fu_130_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="load_input" bitwidth="1" opcode="icmp" m_display="0" m_delay="2.31" m_topoIndex="11" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>br</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="24" name="add_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="add_ln78_fu_136_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_input" bitwidth="15" opcode="add" m_display="0" m_delay="1.94" m_topoIndex="12" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="25" name="br_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399064640" contextFuncName="load_input" opcode="br" m_display="0" m_topoIndex="13" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <controlInputObjs>for.body.split.i</controlInputObjs>
+        <controlInputObjs>load_input.exit.exitStub</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp">
+        <validLinenumbers>78</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+    <basic_blocks id="45" name="for.body.split.i" type="BlockType">
+      <controlInputObjs>for.body.i</controlInputObjs>
+      <controlOutputObjs>br</controlOutputObjs>
+      <controlOutputObjs>for.body.i</controlOutputObjs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="27" name="y_load" lineNumber="86" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399065824" contextFuncName="load_input" bitwidth="32" opcode="load" nodeLabel="2.0" m_display="0" m_topoIndex="22" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="86" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="28" name="x_load" lineNumber="85" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="3154116728" contextFuncName="load_input" bitwidth="32" opcode="load" nodeLabel="1.0" m_display="0" m_topoIndex="16" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="85" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>alloca</dataInputObjs>
+        <dataOutputObjs>icmp</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="31" name="gmem0_addr_read" lineNumber="174" fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="m_axi" implIndex="m_axi" control="no" opType="adapter" coreId="113" contextFuncName="write" bitwidth="512" opcode="read" nodeLabel="1.0" m_display="0" m_delay="7.3" m_topoIndex="17" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="write"/>
+        <dataInputObjs>getelementptr</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="32" name="inStream_write_ln174" lineNumber="174" fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="3.63" m_topoIndex="23" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="write"/>
+        <dataInputObjs>read</dataInputObjs>
+        <dataOutputObjs>inStream</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="33" name="icmp_ln84" lineNumber="84" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="icmp_ln84_fu_156_p2" coreName="Cmp" implIndex="auto" control="no" opType="icmp" coreId="9" contextFuncName="load_input" bitwidth="1" opcode="icmp" nodeLabel="1.0" m_display="0" m_delay="2.47" m_topoIndex="18" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="84" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="34" name="x_1" lineNumber="85" originalName="x" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="x_1_fu_162_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_input" bitwidth="32" opcode="add" nodeLabel="1.0" m_display="0" m_delay="2.55" m_topoIndex="19" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="85" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="35" name="y_1" lineNumber="86" originalName="y" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="y_1_fu_179_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_input" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.55" m_topoIndex="24" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="86" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>select</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="36" name="y_2" lineNumber="84" originalName="y" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="y_2_fu_185_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="load_input" bitwidth="32" opcode="select" nodeLabel="2.0" m_display="0" m_delay="0.69" m_topoIndex="25" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="84" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="37" name="x_2" lineNumber="84" originalName="x" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="x_2_fu_168_p3" coreName="Sel" implIndex="auto_sel" control="no" opType="select" coreId="73" contextFuncName="load_input" bitwidth="32" opcode="select" nodeLabel="1.0" m_display="0" m_delay="0.69" m_topoIndex="20" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="84" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>icmp</dataInputObjs>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>load</dataInputObjs>
+        <dataOutputObjs>write</dataOutputObjs>
+        <dataOutputObjs>add</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="38" name="xStream_write_ln174" lineNumber="174" fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="3.63" m_topoIndex="26" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="write"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>xStream</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="39" name="yStream_write_ln174" lineNumber="174" fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" fileDirectory=".." coreName="FIFO_SRL" implIndex="srl" control="no" opType="fifo" coreId="81" contextFuncName="write" opcode="write" nodeLabel="2.0" m_display="0" m_delay="3.63" m_topoIndex="27" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h" linenumber="174" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="write"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>yStream</dataOutputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="40" name="x_3" lineNumber="91" originalName="x" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." rtlName="x_3_fu_193_p2" coreName="Adder" implIndex="fabric" control="no" opType="add" coreId="1" contextFuncName="load_input" bitwidth="32" opcode="add" nodeLabel="2.0" m_display="0" m_delay="2.55" m_topoIndex="28" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="91" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataOutputObjs>store</dataOutputObjs>
+        <constName>empty</constName>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="41" name="idx_write_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399013664" contextFuncName="load_input" opcode="store" m_display="0" m_delay="1.58" m_topoIndex="14" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="42" name="x_write_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399014832" contextFuncName="load_input" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="29" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>add</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="43" name="y_write_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399016048" contextFuncName="load_input" opcode="store" nodeLabel="2.0" m_display="0" m_delay="1.58" m_topoIndex="30" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <dataInputObjs>select</dataInputObjs>
+        <dataInputObjs>alloca</dataInputObjs>
+      </node_objs>
+      <node_objs xsi:type="cdfg:CdfgNode" id="44" name="br_ln78" lineNumber="78" fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" fileDirectory=".." coreId="2399018864" contextFuncName="load_input" opcode="br" nodeLabel="2.0" m_display="0" m_topoIndex="31" m_clusterGroupNumber="-1">
+        <inlineStackInfo fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp" linenumber="78" fileDirectory="/usr/scratch/ygoyal8/special_problems" functionName="load_input"/>
+        <controlInputObjs>for.body.i</controlInputObjs>
+      </node_objs>
+      <fileValidLineNumbers fileName="Vitis_Accel_Examples/cpp_kernels/critical_path/src/apply_watermark.cpp">
+        <validLinenumbers>86</validLinenumbers>
+        <validLinenumbers>85</validLinenumbers>
+        <validLinenumbers>84</validLinenumbers>
+        <validLinenumbers>91</validLinenumbers>
+        <validLinenumbers>78</validLinenumbers>
+      </fileValidLineNumbers>
+      <fileValidLineNumbers fileName="/tools/software/xilinx/Vitis_HLS/2022.1/common/technology/autopilot/hls_stream_39.h">
+        <validLinenumbers>174</validLinenumbers>
+      </fileValidLineNumbers>
+    </basic_blocks>
+  </regions>
+  <ScheduleInfo time="0"/>
+  <ScheduleInfo time="1"/>
+  <ScheduleInfo time="2"/>
+  <regnodes realName="sext_ln78_cast_reg_229">
+    <nodeIds>10</nodeIds>
+  </regnodes>
+  <regnodes realName="y_reg_208">
+    <nodeIds>6</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln84_reg_243">
+    <nodeIds>33</nodeIds>
+  </regnodes>
+  <regnodes realName="icmp_ln78_reg_234">
+    <nodeIds>23</nodeIds>
+  </regnodes>
+  <regnodes realName="gmem0_addr_read_reg_238">
+    <nodeIds>31</nodeIds>
+  </regnodes>
+  <regnodes realName="idx_reg_222">
+    <nodeIds>8</nodeIds>
+  </regnodes>
+  <regnodes realName="x_2_reg_248">
+    <nodeIds>37</nodeIds>
+  </regnodes>
+  <regnodes realName="x_reg_215">
+    <nodeIds>7</nodeIds>
+  </regnodes>
+  <expressionNodes realName="y_2_fu_185">
+    <nodeIds>36</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_3_fu_193">
+    <nodeIds>40</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_1_fu_179">
+    <nodeIds>35</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="idx_fu_72">
+    <nodeIds>8</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="y_fu_64">
+    <nodeIds>6</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln78_fu_130">
+    <nodeIds>23</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="gmem0_addr_fu_147">
+    <nodeIds>21</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_2_fu_168">
+    <nodeIds>37</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_1_fu_162">
+    <nodeIds>34</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="icmp_ln84_fu_156">
+    <nodeIds>33</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="x_fu_68">
+    <nodeIds>7</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="add_ln78_fu_136">
+    <nodeIds>24</nodeIds>
+  </expressionNodes>
+  <expressionNodes realName="sext_ln78_cast_fu_108">
+    <nodeIds>10</nodeIds>
+  </expressionNodes>
+  <ioNodes realName="gmem0_addr_read_read_fu_82">
+    <nodeIds>31</nodeIds>
+  </ioNodes>
+  <ioNodes realName="y_load_load_fu_176">
+    <nodeIds>27</nodeIds>
+  </ioNodes>
+  <ioNodes realName="x_load_load_fu_153">
+    <nodeIds>28</nodeIds>
+  </ioNodes>
+  <ioNodes realName="sext_ln78_read_read_fu_76">
+    <nodeIds>9</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_117">
+    <nodeIds>16</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln174_write_fu_94">
+    <nodeIds>38</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln78_store_fu_203">
+    <nodeIds>43</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln174_write_fu_87">
+    <nodeIds>32</nodeIds>
+  </ioNodes>
+  <ioNodes realName="idx_1_load_fu_127">
+    <nodeIds>20</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_112">
+    <nodeIds>15</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln0_store_fu_122">
+    <nodeIds>17</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln78_store_fu_198">
+    <nodeIds>42</nodeIds>
+  </ioNodes>
+  <ioNodes realName="store_ln78_store_fu_142">
+    <nodeIds>41</nodeIds>
+  </ioNodes>
+  <ioNodes realName="write_ln174_write_fu_101">
+    <nodeIds>39</nodeIds>
+  </ioNodes>
+  <ioPorts name="gmem0">
+    <contents name="read">
+      <nodeIds>31</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="inStream">
+    <contents name="write">
+      <nodeIds>32</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="sext_ln78">
+    <contents name="read">
+      <nodeIds>9</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="xStream">
+    <contents name="write">
+      <nodeIds>38</nodeIds>
+    </contents>
+  </ioPorts>
+  <ioPorts name="yStream">
+    <contents name="write">
+      <nodeIds>39</nodeIds>
+    </contents>
+  </ioPorts>
+  <fsm>
+    <states id="1">
+      <operations id="6" stage="1" latency="1"/>
+      <operations id="7" stage="1" latency="1"/>
+      <operations id="8" stage="1" latency="1"/>
+      <operations id="9" stage="1" latency="1"/>
+      <operations id="10" stage="1" latency="1"/>
+      <operations id="11" stage="1" latency="1"/>
+      <operations id="12" stage="1" latency="1"/>
+      <operations id="13" stage="1" latency="1"/>
+      <operations id="14" stage="1" latency="1"/>
+      <operations id="15" stage="1" latency="1"/>
+      <operations id="16" stage="1" latency="1"/>
+      <operations id="17" stage="1" latency="1"/>
+      <operations id="18" stage="1" latency="1"/>
+      <operations id="20" stage="1" latency="1"/>
+      <operations id="23" stage="1" latency="1"/>
+      <operations id="24" stage="1" latency="1"/>
+      <operations id="25" stage="1" latency="1"/>
+      <operations id="41" stage="1" latency="1"/>
+    </states>
+    <states id="2">
+      <operations id="21" stage="1" latency="1"/>
+      <operations id="22" stage="1" latency="1"/>
+      <operations id="28" stage="1" latency="1"/>
+      <operations id="31" stage="1" latency="1"/>
+      <operations id="33" stage="1" latency="1"/>
+      <operations id="34" stage="1" latency="1"/>
+      <operations id="37" stage="1" latency="1"/>
+      <operations id="46" stage="1" latency="1"/>
+    </states>
+    <states id="3">
+      <operations id="27" stage="1" latency="1"/>
+      <operations id="29" stage="1" latency="1"/>
+      <operations id="30" stage="1" latency="1"/>
+      <operations id="32" stage="1" latency="1"/>
+      <operations id="35" stage="1" latency="1"/>
+      <operations id="36" stage="1" latency="1"/>
+      <operations id="38" stage="1" latency="1"/>
+      <operations id="39" stage="1" latency="1"/>
+      <operations id="40" stage="1" latency="1"/>
+      <operations id="42" stage="1" latency="1"/>
+      <operations id="43" stage="1" latency="1"/>
+      <operations id="44" stage="1" latency="1"/>
+    </states>
+    <transitions inState="1" outState="2">
+      <condition id="-1"/>
+    </transitions>
+    <transitions inState="2" outState="3">
+      <condition id="-1"/>
+    </transitions>
+  </fsm>
+  <CFGRegionsRoot>
+    <cfgRegions mId="1" mTag="load_input_Pipeline_image_traverse" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1" mMinLatency="31571" mMaxLatency="31571">
+      <subRegions>2</subRegions>
+      <subRegions>3</subRegions>
+      <subRegions>4</subRegions>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="2" mTag="Entry" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>19</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="3" mTag="image_traverse" mII="1" mDepth="3" mMinTripCount="31568" mMaxTripCount="31568" mMinLatency="31569" mMaxLatency="31569" mType="1">
+      <basicBlocks>26</basicBlocks>
+      <basicBlocks>45</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+    <cfgRegions mId="4" mTag="Return" mII="-1" mDepth="-1" mMinTripCount="-1" mMaxTripCount="-1">
+      <basicBlocks>47</basicBlocks>
+      <mDfPipe/>
+    </cfgRegions>
+  </CFGRegionsRoot>
+</cdfg:DBCdfg>

@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /export/hdd/scratch/ygoyal8/special_problems/HLS_project_apply_watermark/solution1/./sim/autowrap/testbench/apply_watermark.cpp_pre.cpp.tb.cpp

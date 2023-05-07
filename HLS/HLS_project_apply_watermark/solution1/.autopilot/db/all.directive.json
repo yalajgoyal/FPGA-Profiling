@@ -1,0 +1,50 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "apply_watermark",
+          "label": "",
+          "functionLabel": "",
+          "id": "1",
+          "sourceFile": "\/export\/hdd\/scratch\/ygoyal8\/special_problems\/HLS_project_apply_watermark\/solution1\/directives.tcl",
+          "sourceLine": "6",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apply_watermark"
+              }]
+          }
+        },
+        {
+          "functionName": "apply_watermark",
+          "label": "",
+          "functionLabel": "",
+          "id": "2",
+          "sourceFile": "\/export\/hdd\/scratch\/ygoyal8\/special_problems\/HLS_project_apply_watermark\/solution1\/csynth.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apply_watermark"
+              }]
+          }
+        },
+        {
+          "functionName": "apply_watermark",
+          "label": "",
+          "functionLabel": "",
+          "id": "3",
+          "sourceFile": "\/export\/hdd\/scratch\/ygoyal8\/special_problems\/HLS_project_apply_watermark\/solution1\/csynth.tcl",
+          "sourceLine": "18",
+          "pragma": {
+            "name": "TOP",
+            "option": [{
+                "name": "name",
+                "value": "apply_watermark"
+              }]
+          }
+        }
+      ]
+    }]}
