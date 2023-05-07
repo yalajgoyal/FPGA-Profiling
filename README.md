@@ -15,10 +15,11 @@ There were different optimisations applied to the basic code to gather a diverse
 
 ### HLS code
 
-The kernel codes and test bench are placed in the path "HLS\Vitis_Accel_Examples\cpp_kernels\critical_path\src". 
-1. Source the setup file from your server.
-2. Use the respective kernel code and test bench(16 bit kernels with 16 bit test bech and 32 bit with 32 bit) from the location to make a Vitis HLS project.
-3. Generate the report for Csynth and Co-sim.
+1. Clone the [Vitits Accel Examples](https://github.com/Xilinx/Vitis_Accel_Examples) from the link.
+2. Copy the cpp kernels and test bench in the path "\Vitis_Accel_Examples\cpp_kernels\critical_path\src".
+3. Source the environment setup file from your server.
+4. Use the respective kernel code and test bench(16 bit kernels with 16 bit test bech and 32 bit with 32 bit) from the location to make a Vitis HLS project.
+5. Generate the report for Csynth and Co-sim.
 
 ### Host code
 
